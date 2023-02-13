@@ -1,14 +1,7 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import TrackShipment from "./pages/TrackShipment";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  return <TrackShipment />;
+};
 
-  return (
-    <div className="text-3xl font-bold underline">
-      hello
-    </div>
-  )
-}
-
-export default App
+export default App;
