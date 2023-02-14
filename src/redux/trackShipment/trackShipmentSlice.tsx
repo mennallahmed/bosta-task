@@ -3,7 +3,7 @@ import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 export const getShipmentStatus = createAsyncThunk(
   'shipments/track/trackingNumber',
   // if you type your function argument here
-  async (trackingNumber: number) => {
+  async (trackingNumber: string) => {
     const response = await fetch(`https://tracking.bosta.co/shipments/track/${trackingNumber}`,{
       method:"GET"
     })
