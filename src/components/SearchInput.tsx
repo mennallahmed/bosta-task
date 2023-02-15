@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import type { AppDispatch, RootState } from "../redux/store";
-import { useSelector, useDispatch } from "react-redux";
+import type { AppDispatch } from "../redux/store";
+import { useDispatch } from "react-redux";
 import { getShipmentStatus } from "../redux/trackShipment/trackShipmentSlice";
 import searchIcon from "../assets/search-icon.svg";
 
@@ -8,11 +8,11 @@ const SearchInput = () => {
   const dispatch = useDispatch<AppDispatch>();
   const [trackingNumber, setTrackingNumber] = useState('');
   return (
-    <div className="container mx-auto text-center mt-16">
+    <div className="container mx-auto text-center md:mt-16">
       <h2 className="text-xl font-bold text-gray">Track your shipment</h2>
-      <div className="flex justify-center mt-5 h-16">
+      <div className="flex justify-center mt-10 md:mt-5 h-16">
         <input
-          className="w-96 border border-[#e4e7ec] hover:border-[#1dabb3] focus:border-[#1dabb3] outline-none rounded-bl-[10px] rounded-tl-[10px] pl-4"
+          className="w-60 md:w-96 border border-[#e4e7ec] hover:border-[#1dabb3] focus:border-[#1dabb3] outline-none rounded-bl-[10px] rounded-tl-[10px] pl-4"
           type={"text"}
           placeholder="Tracking No."
           value={trackingNumber}
