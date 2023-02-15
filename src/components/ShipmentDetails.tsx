@@ -1,6 +1,7 @@
 import type { RootState } from "../redux/store";
 import { useSelector } from "react-redux";
 import TransitEventsTable from "./TransitEventsTable";
+import ShipmentPhases from "./ShipmentPhases";
 
 const ShipmentDetails = () => {
   const shipmentData = useSelector(
@@ -26,7 +27,7 @@ const ShipmentDetails = () => {
             className={`${
               (shipmentData?.CurrentStatus?.state == "DELIVERED" ||
                 "DELIVERED_TO_SENDER") &&
-              "text-green-700 "
+              "text-green-500 "
             }text-xl font-bold mt-2`}
           >
             {shipmentData?.CurrentStatus?.state.replaceAll("_", " ")}
@@ -51,6 +52,7 @@ const ShipmentDetails = () => {
           </h3>
         </div>
       </section>
+      <ShipmentPhases />
       <TransitEventsTable />
     </>
   );
