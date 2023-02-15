@@ -14,8 +14,7 @@ const ShipmentDetails = () => {
       shipmentData?.TransitEvents[0]?.timestamp) ||
     "";
   const lastUpdate = new Date(timestamp);
-//<section className="container w-[95vw] md:full mx-auto flex flex-col md:flex-row md:justify-around border border-[#e4e7ec] rounded-[10px] p-3 md:p-9 mt-16">
-      
+
   return (
     <>
       <section className="container w-[95vw] md:full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:justify-around border border-[#e4e7ec] rounded-[10px] p-3 md:p-9 mt-16">
