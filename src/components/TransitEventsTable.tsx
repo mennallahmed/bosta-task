@@ -54,7 +54,7 @@ const TransitEventsTable = () => {
                 {shipmentData?.TransitEvents.map((item, index) => {
                   return (
                     <tr key={index} className="bg-white">
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-headerColor-900">
                         {item?.hub}
                       </td>
                       <td className="text-sm px-6 py-4 whitespace-nowrap">

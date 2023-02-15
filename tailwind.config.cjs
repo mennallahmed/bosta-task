@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         primary: "#e30613",
         secondary: "#4f5665",
-        gray: "#475467"
+        headerColor: "#475467"
       },
     },
   },

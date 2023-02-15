@@ -9,7 +9,7 @@ const SearchInput = () => {
   const [trackingNumber, setTrackingNumber] = useState('');
   return (
     <div className="container mx-auto text-center md:mt-16">
-      <h2 className="text-xl font-bold text-gray">Track your shipment</h2>
+      <h2 className="text-xl font-bold text-headerColor">Track your shipment</h2>
       <div className="flex justify-center mt-10 md:mt-5 h-16">
         <input
           className="w-60 md:w-96 border border-[#e4e7ec] hover:border-[#1dabb3] focus:border-[#1dabb3] outline-none rounded-bl-[10px] rounded-tl-[10px] pl-4"
