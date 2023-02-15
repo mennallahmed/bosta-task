@@ -5,7 +5,6 @@ import { getShipmentStatus } from "../redux/trackShipment/trackShipmentSlice";
 import searchIcon from "../assets/search-icon.svg";
 
 const SearchInput = () => {
-  const count = useSelector((state: RootState) => state.trackShipment.data);
   const dispatch = useDispatch<AppDispatch>();
   const [trackingNumber, setTrackingNumber] = useState('');
   return (
